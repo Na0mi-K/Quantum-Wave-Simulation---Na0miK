@@ -2,9 +2,9 @@
 
 This solves the time-dependent Schrodinger equation
 
-```
-i*hbar * dψ/dt = -hbar^2/(2m) * ∇²ψ + V(x,t)ψ
-```
+$$
+i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \psi + V(x,t)\psi
+$$
 
 for a complex-valued wavefunction ψ, using the **split-operator (Strang
 splitting) Fourier method**. Units are natural (ħ = m = 1) unless stated
