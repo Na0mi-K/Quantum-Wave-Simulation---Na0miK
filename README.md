@@ -14,15 +14,15 @@ otherwise.
 
 A naive explicit scheme — forward Euler in time, central differences in
 space — applied directly to the Schrodinger equation is **unconditionally
-unstable**: its update matrix is not unitary, so `∫|ψ|² dx` grows
+unstable**: its update matrix is not unitary, so $\int |\psi|^2 \, \mathrm{d}x$ grows
 exponentially no matter how small `dt` is (see `demo_stability.py` — the
 naive scheme blows past 10⁸ in norm by t ≈ 0.6, while nothing else about
 the run has changed). The fix used here — the split-operator method —
 approximates the propagator as
 
-```
-exp(-i H dt/ħ) ≈ exp(-i V dt/2ħ) · exp(-i T dt/ħ) · exp(-i V dt/2ħ) + O(dt³)
-```
+$$
+\exp\left( -\frac{iH\,dt}{\hbar} \right) \approx \exp\left( -\frac{iV\,dt}{2\hbar} \right) \cdot \exp\left( -\frac{iT\,dt}{\hbar} \right) \cdot \exp\left( -\frac{iV\,dt}{2\hbar} \right) + \mathcal{O}(dt^3)
+$$
 
 Each factor is applied *exactly*: the potential factor is a pointwise phase
 in real space, and the kinetic factor `T = p²/2m` is a pointwise phase in
