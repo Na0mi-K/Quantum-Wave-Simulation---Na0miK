@@ -11,7 +11,7 @@ splitting) Fourier method**. Units are natural (ħ = m = 1) unless stated
 otherwise.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ##Famous Double Slit Interference :
-<img width="1260" height="1260" alt="Image" src="https://github.com/user-attachments/assets/161efa55-9245-4f2d-af44-9999985af1f1" />
+<img width="600" height="550" alt="Image" src="https://github.com/user-attachments/assets/cccb1491-19f6-4c9a-b9f6-b366a1f36fff" />
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ##Scattering Animation :
 <img width="600" height="550" alt="Image" src="https://github.com/user-attachments/assets/2ef7079e-77f2-4dd2-a8c7-653b6eb05bee" />
