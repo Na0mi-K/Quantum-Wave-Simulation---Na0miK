@@ -25,9 +25,9 @@ $$
 $$
 
 Each factor is applied *exactly*: the potential factor is a pointwise phase
-in real space, and the kinetic factor `T = p²/2m` is a pointwise phase in
+in real space, and the kinetic factor $T = \frac{p^2}{2m}$ is a pointwise phase in
 Fourier space (computed via FFT). Both factors are individually unitary, so
-the composed step conserves `∫|ψ|²` to machine precision at *any* step size
+the composed step conserves $\int |\psi|^2$ to machine precision at *any* step size
 — this is verified in every demo below and directly contrasted with the
 unstable naive scheme in `demo_stability.py`.
 
@@ -98,11 +98,11 @@ half-right.
   higher-k tail tunnels more easily) transmits P ≈ 0.031 — the right
   ballpark and the right direction of deviation.
 - **Double-slit**: fringe spacing on the "screen" matches the elementary
-  prediction `Δy = λL/d` closely (see `double_slit_interference_summary.png`).
+  prediction  $\Delta y = \frac{\lambda L}{d}$ closely (see `double_slit_interference_summary.png`).
 - **Harmonic oscillator**: numerically diagonalized eigenvalues match
-  `(n+1/2)ħω` to better than 1.3×10⁻⁴ over the lowest 8 levels; a
+  $\left(n + \frac{1}{2}\right)\hbar\omega$ to better than 1.3×10⁻⁴ over the lowest 8 levels; a
   displaced Gaussian's ⟨x⟩(t) exactly tracks the classical
-  `x₀cos(ωt)` trajectory (coherent state, no spreading) with energy
+  $x_0 \cos(\omega t)$ trajectory (coherent state, no spreading) with energy
   conserved.
 - **Stability**: the naive explicit finite-difference scheme blows up
   (norm > 10⁸) within about half a natural time unit; Crank-Nicolson and
